@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import dynamic from "next/dynamic";
-import Image from "next/image";
 
 const WalletMultiButton = dynamic(
   () =>
@@ -29,20 +28,8 @@ export function Navbar() {
     <nav className="border-b border-[#27272a]/20 bg-background/50 backdrop-blur-md sticky top-0 z-50">
       <div className="w-full px-2 sm:px-4 lg:px-6 h-20 flex items-center justify-between">
         <div className="flex items-center">
-          {/* <img src="./ChatGPT Image Feb 25, 2026, 07_07_33 PM.png" className=" absolute top-10" alt="hii" /> */}
-         
-          <Link href="/" className="font-semibold text-lg hover:opacity-80 transition-opacity">
-            <div className="relative h-50 w-[400px]">
-              <Image
-                src="/ChatGPT Image Feb 25, 2026, 07_07_33 PM.png"
-                fill
-                sizes="300px"
-                className="object-contain"
-                alt="NFTTickets"
-                loading="eager"
-                priority
-              />
-            </div>
+          <Link href="/" className="font-bold text-2xl tracking-tighter hover:opacity-80 transition-opacity bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">
+            NFTickets
           </Link>
         </div>
         <div className="flex items-center gap-6">
