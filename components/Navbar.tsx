@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import dynamic from "next/dynamic";
 
 const WalletMultiButton = dynamic(
@@ -28,11 +29,21 @@ export function Navbar() {
     <nav className="border-b border-[#27272a]/20 bg-background/50 backdrop-blur-md sticky top-0 z-50">
       <div className="w-full px-2 sm:px-4 lg:px-6 h-20 flex items-center justify-between">
         <div className="flex items-center">
-          <Link href="/" className="font-bold text-2xl tracking-tighter hover:opacity-80 transition-opacity bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">
-            NFTickets
+          <Link href="/" className="hover:opacity-80 transition-opacity">
+            <img
+              src="/nftickets.png"
+              alt="NFTickets Logo"
+              // width={200}
+              // height={60}
+              className="h-40 md:h-56 object-contain drop-shadow-[0_0_15px_rgba(255,255,255,0.05)]"
+
+            />
           </Link>
         </div>
         <div className="flex items-center gap-6">
+          <Link href="/create-event" className="text-sm font-medium text-foreground/80 hover:text-foreground">
+            Create Event
+          </Link>
           <Link href="/events" className="text-sm font-medium text-foreground/80 hover:text-foreground">
             Events
           </Link>

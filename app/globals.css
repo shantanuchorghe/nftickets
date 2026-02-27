@@ -53,4 +53,6 @@ body {
 .wallet-adapter-button:hover {
   background-color: #3f3f46 !important;
 }
-
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1) !important;
+}

@@ -10,9 +10,9 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-[calc(100vh-4rem)] p-8 text-center max-w-3xl mx-auto space-y-8">
       <div className="space-y-4">
-        
+
         <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-white">
-          NFTickets Demo
+          NFTickets
         </h1>
         <p className="text-xl text-zinc-400 max-w-xl mx-auto">
           Mint and verify NFT event tickets seamlessly on the Solana blockchain.
